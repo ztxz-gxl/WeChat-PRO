@@ -1,0 +1,31 @@
+<view>
+   <swiper class="swiper" indicator-dots="true" autoplay="true" interval="3000" duration="1000">  
+   <block wx:for="{{movies}}" wx:for-index="index" wx:key="index">  
+    <swiper-item>  
+     <image src="{{item.url}}" class="slide-image" mode="aspectFill" style='width:100%'/>  
+    </swiper-item>  
+   </block>  
+  </swiper>
+</view>  
+<view class="table b2"> 
+ <view class="title">今日利率(每半年刷新一次)</view>
+ <view class="tr bg-w">
+ <view class="th">序号</view>
+ <view class="th">存储利率</view>
+ <view class="th ">存储年数</view>
+ </view>
+ <block wx:for="{{listData2}}" wx:key="index">
+ <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+ <view class="td add">{{item.Code}}</view>
+ <view class="td add">{{item.Text}}</view>
+ <view class="td add">{{item.Type}}</view>
+ </view>
+ <view class="tr" wx:else>
+ <view class="td add">{{item.Code}}</view>
+ <view class="td add">{{item.Text}}</view>
+ <view class="td add">{{item.Type}}</view>
+ </view>
+ </block>
+</view>
+
+<navigator class="b2 nav" url="../../pages/ganyu/ganyu">加入绿色银行</navigator>

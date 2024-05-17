@@ -1,0 +1,23 @@
+<view>
+   <view class='login'>
+      <image mode="aspectFit" src='../../images/ava.png'></image>
+   </view>
+   <view class="ad_popError" style='visibility:{{shows}}'>
+      {{popErrorMsg}}
+    </view> 
+   <form bindsubmit="formSubmit">
+          <view class="section">
+    <input name='username' value='' placeholder="请输入用户名" />
+  </view>
+       <view class="section">
+        <input name='password' value='' password type="number" placeholder='请输入密码' />
+      </view>
+      <view class='section'>
+       <button formType="submit">登陆</button>
+      </view>
+
+    </form>
+
+    <view class="but">若未绑定账户，请到网页导入账户</view>
+    
+</view>

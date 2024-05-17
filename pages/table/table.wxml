@@ -1,0 +1,67 @@
+<view>
+
+</view>
+<view class="table"> 
+ <view class="title">今日中和排行榜</view>
+ <view class="tr bg-w">
+ <view class="th">序号</view>
+ <view class="th">用户地址</view>
+ <view class="th ">绿色次数</view>
+ </view>
+ <block wx:for="{{listData}}" wx:key="index">
+ <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+ <view class="td add">{{item.Code}}</view>
+ <view class="td add">{{item.Text}}</view>
+ <view class="td add">{{item.Type}}</view>
+ </view>
+ <view class="tr" wx:else>
+ <view class="td add">{{item.Code}}</view>
+ <view class="td add">{{item.Text}}</view>
+ <view class="td add">{{item.Type}}</view>
+ </view>
+ </block>
+</view>
+
+<view class="table b2"> 
+ <view class="title">今日绿色方式排行</view>
+ <view class="tr bg-w">
+ <view class="th">序号</view>
+ <view class="th">绿色方式</view>
+ <view class="th ">参与人数</view>
+ </view>
+ <block wx:for="{{listData2}}" wx:key="index">
+ <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+ <view class="td add">{{item.Code}}</view>
+ <view class="td add">{{item.Text}}</view>
+ <view class="td add">{{item.Type}}</view>
+ </view>
+ <view class="tr" wx:else>
+ <view class="td add">{{item.Code}}</view>
+ <view class="td add">{{item.Text}}</view>
+ <view class="td add">{{item.Type}}</view>
+ </view>
+ </block>
+</view>
+
+<view class="table b2"> 
+ <view class="title">今日举报通报</view>
+ <view class="tr bg-w">
+ <view class="th">序号</view>
+ <view class="th">用户名</view>
+ <view class="th ">被举报次数</view>
+ </view>
+ <block wx:for="{{listData3}}" wx:key="index">
+ <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
+ <view class="td add">{{item.Code}}</view>
+ <view class="td add">{{item.Text}}</view>
+ <view class="td add">{{item.Type}}</view>
+ </view>
+ <view class="tr" wx:else>
+ <view class="td add">{{item.Code}}</view>
+ <view class="td add">{{item.Text}}</view>
+ <view class="td add">{{item.Type}}</view>
+ </view>
+ </block>
+</view>
+
+<view class="ts">若对其中数据有异议，请到网页进行举报和投票</view>

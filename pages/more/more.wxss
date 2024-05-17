@@ -1,0 +1,103 @@
+.tex{
+  border:solid 1rpx rgb(210, 230, 235);
+  background-color: #d4ca3f;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.texEN{
+  color: red;
+  font-size: 1.1rem;
+}
+
+.texFun{
+  color: rgb(43, 21, 240);
+  font-size: 1.5rem;
+}
+
+.texTime{
+  color: white;
+  font-size: 1.3rem;
+}
+
+
+.nav{
+  font-size: 1.5rem;
+  text-align: center;
+   text-decoration: underline;
+   color: green;
+   margin-bottom: 50rpx;
+  }
+
+  .b2{
+    margin-top: 50rpx;
+   }
+
+   .title{
+    text-align: center;
+    background: #0ccc45;
+    color: white;
+    font-size: 1.5rem;
+   }
+
+   .all{
+     margin-top: 50rpx;
+     border:solid 1rpx black;
+   }
+
+   .my{
+    margin: 15rpx auto;
+    border-top: solid 1px #ebebeb;
+    border-bottom: solid 2px #ebebeb;
+    font-size: 30rpx;
+  }
+  .my .my-item{
+    font-size: 28rpx;
+    padding: 0;
+  }
+  .my .my-item .myitem-name{
+    width:165rpx;
+    text-align: right;
+    font-size: 1.3em;
+    color: black;
+    float: left;
+    height: 84rpx;
+    line-height: 64rpx
+  }
+  .my .my-item button{
+    width: 100%;
+    /* background: #0098e4; */
+    color: #fff;
+    margin: 50rpx auto 0
+  }
+  
+  .my-item view:nth-child(2){
+    color: #444;
+    width: 70%;
+    display: inline-block;
+    margin: 9rpx 0;
+    margin-left:2%;
+    padding: 0 16rpx;
+    height: 84rpx;
+    line-height: 58rpx
+  }
+  .my-item view:nth-child(2) input{
+    height: 84rpx;
+    line-height: 84rpx
+  }
+  .under{
+    float: right
+  }
+  
+  .mainText{
+    font-size: 2.6em;
+    color: green;
+    text-align: center;
+  }
+
+  .ts{
+    margin-top: 50rpx;
+    margin-bottom: 50rpx;
+    color: green;
+    text-align: center;
+  }

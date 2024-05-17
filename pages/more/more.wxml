@@ -1,0 +1,61 @@
+<view class="my" style="border:solid 1rpx black;">
+<view class="title" style="margin-top: 0;">用户信息</view>
+<view class="my-item clearfloat " style="border:solid 1rpx rgb(210, 230, 235);">
+      <view class="myitem-name flex-item">
+        <text>用户地址:</text>
+      </view>
+      <view>
+        <view style="word-break: keep-all;">{{Addr}}</view>
+      </view>
+    </view>
+    <view class="my-item clearfloat " style="border:solid 1rpx rgb(210, 230, 235);">
+      <view class="myitem-name flex-item">
+        <text>用户名:</text>
+      </view>
+      <view>
+        <text>{{user.PersonalName}}</text>
+      </view>
+    </view>
+    <view class="my-item clearfloat " style="border:solid 1rpx rgb(210, 230, 235);">
+      <view class="myitem-name flex-item">
+        <text>账户余额:</text>
+      </view>
+      <view>
+        <text>{{user.PersonalAmount}}</text>
+      </view>
+    </view>
+    <view class="my-item clearfloat " style="border:solid 1rpx rgb(210, 230, 235);">
+      <view class="myitem-name flex-item">
+        <text>中和额度:</text>
+      </view>
+      <view>
+        <text>{{user.NeutralizedAmount}}</text>
+      </view>
+    </view>
+    <view class="my-item clearfloat " style="border:solid 1rpx rgb(210, 230, 235);">
+      <view class="myitem-name flex-item">
+        <text>被举报数:</text>
+      </view>
+      <view>
+        <text>{{user.NumberOfReported}}</text>
+      </view>
+    </view>
+</view>
+<view class="all">
+<view class="title">历史记录</view>
+<block wx:for="{{list}}" wx:key="index">
+<view class="tex" style="  margin-top: 0rpx;" wx:if="{{index==0}}">
+<view class="texTime"><text>上传时间:{{item.Time}}</text></view>
+<view class="texFun"><text>绿色生活方式:{{item.Fun}}</text></view>
+<view class="texEN"><text>状态:{{item.Stu}}</text></view>
+</view>
+<view class="tex"  wx:else>
+<view class="texTime"><text>上传时间:{{item.Time}}</text></view>
+<view class="texFun"><text>绿色生活方式:{{item.Fun}}</text></view>
+<view class="texEN"><text>状态:{{item.Stu}}</text></view>
+</view>
+</block>
+<navigator class="b2 nav" url="/pages/all/all">查看全部历史记录</navigator>
+</view>
+
+<view class="ts">若对需修改个人信息，请到网页版中进行修改</view>

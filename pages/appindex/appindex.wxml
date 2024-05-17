@@ -1,0 +1,38 @@
+<!--appindex.wxml-->
+<view>
+   <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">  
+   <block wx:for="{{movies}}" wx:for-index="index" wx:key="index">  
+    <swiper-item>  
+     <image src="{{item.url}}" class="slide-image" mode="aspectFill" style='width:100%'/>  
+    </swiper-item>  
+   </block>  
+  </swiper>
+</view>  
+<view class='indexcontent clearfloat'>
+  <view class='x-ganyu xinli' bindtap='begintests' data-src="种植植物">
+        <image style="width: 70px; height: 70px;" mode="scaleToFill" src="../../images/q1.png"></image>
+         <text>种植植物</text>
+  </view>
+  <view class='x-ganyu xinli' bindtap='begintests' data-src="骑电动车">
+        <image style="width: 70px; height: 70px;" mode="scaleToFill" src="../../images/q2.png"></image>
+         <text>骑电动车</text>
+  </view>
+  <view class='x-ganyu xinli' bindtap='begintests' data-src="徒步出行">
+        <image style="width: 70px; height: 70px;" mode="scaleToFill" src="../../images/q3.png"></image>
+         <text>徒步出行</text>
+  </view>
+  <view class='x-ganyu xinli' bindtap='begintests' data-src="新能源车">
+       <image style="width: 70px; height: 70px;" mode="scaleToFill" src="../../images/q4.png"></image>
+       <text >新能源车</text>
+  </view>
+   <view class='x-ganyu xinli' bindtap='begintests' data-src="垃圾回收">
+        <image style="width: 70px; height: 70px;" mode="scaleToFill" src="../../images/q5.png"></image>
+         <text>垃圾回收</text>
+  </view>
+  <view class='other xinli' bindtap='begintests' data-src="其他行为">
+       <image style="width: 70px; height: 70px;" mode="scaleToFill" src="../../images/psy_text2.png"></image>
+       <text >其他行为</text>
+  </view>
+</view>
+<view class="ts">若对其中数据有异议，请到网页进行举报和投票</view>
+  

@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/appindex/appindex",
+    "pages/table/table",
+    "pages/more/more",
+    "pages/all/all",
+    "pages/begintest/begintest",
+    "pages/ganyu/ganyu",
+    "pages/bank/bank"
+  ],
+  "window": {
+    "backgroundColor": "#fff0",
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#28b03f",
+    "navigationBarTitleText": "绿色生活",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "position": "top",
+    "list": [
+      {
+        "pagePath": "pages/appindex/appindex",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/table/table",
+        "text": "数据中心"
+      },
+      {
+        "pagePath": "pages/bank/bank",
+        "text": "绿色银行"
+      },
+      {
+        "pagePath": "pages/more/more",
+        "text": "我的信息"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

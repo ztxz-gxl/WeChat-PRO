@@ -1,0 +1,34 @@
+<view class='pem_content'>
+<view class="mainText">
+<text>存入绿色银行</text>
+</view>
+<view>
+<image src="../../images/a2.jpg" mode="aspectFill" style="width: 100%;"></image>
+<view class="ad_popError" style='visibility:{{shows}}'>
+      {{popErrorMsg}}
+    </view> 
+</view>
+  <view class="my">
+     <form bindsubmit="Submits">
+    <view class="my-item clearfloat ">
+      <view class="myitem-name flex-item">
+        <text>数量:</text>
+      </view>
+      <view>
+        <input type='text' name='amount' ></input>
+      </view>
+    </view>
+    <view class="my-item clearfloat ">
+      <view class="myitem-name flex-item">
+        <text>时间(年):</text>
+      </view>
+      <view>
+        <input type='text' name='year' ></input>
+      </view>
+    </view>
+    <view  class="my-item">
+      <button type='primary' form-type='submit'>确定</button>
+    </view>
+    </form> 
+  </view>
+</view>

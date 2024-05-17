@@ -1,0 +1,32 @@
+.tex{
+    border:solid 1rpx rgb(210, 230, 235);
+    background-color: #d4ca3f;
+    margin-top: 30rpx;
+    margin-bottom: 30rpx;
+  }
+  
+  .texEN{
+    color: red;
+    font-size: 1.1rem;
+  }
+  
+  .texFun{
+    color: rgb(43, 21, 240);
+    font-size: 1.5rem;
+  }
+  
+  .texTime{
+    color: white;
+    font-size: 1.3rem;
+  }
+  
+     .title{
+      text-align: center;
+      background: #0ccc45;
+      color: white;
+      font-size: 1.5rem;
+     }
+  
+     .all{
+       border:solid 1rpx black;
+     }

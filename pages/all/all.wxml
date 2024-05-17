@@ -1,0 +1,15 @@
+<view class="all">
+<view class="title">历史记录</view>
+<block wx:for="{{list}}" wx:key="index">
+<view class="tex" style="  margin-top: 0rpx;" wx:if="{{index==0}}">
+<view class="texTime"><text>上传时间:{{item.Time}}</text></view>
+<view class="texFun"><text>绿色生活方式:{{item.Fun}}</text></view>
+<view class="texEN"><text>状态:{{item.Stu}}</text></view>
+</view>
+<view class="tex"  wx:else>
+<view class="texTime"><text>上传时间:{{item.Time}}</text></view>
+<view class="texFun"><text>绿色生活方式:{{item.Fun}}</text></view>
+<view class="texEN"><text>状态:{{item.Stu}}</text></view>
+</view>
+</block>
+</view>

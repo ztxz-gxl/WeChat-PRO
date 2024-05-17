@@ -1,0 +1,39 @@
+<view class='pem_content'>
+<view class="mainText">
+<text>上传绿色生活信息</text>
+</view>
+<view>
+<image src="../../images/a2.jpg" mode="aspectFill" style="width: 100%;"></image>
+</view>
+<view class="ad_popError" style='visibility:{{shows}}'>
+      {{popErrorMsg}}
+    </view> 
+  <view class="my">
+     <form bindsubmit="formSubmit">
+    <view class="my-item clearfloat ">
+      <view class="myitem-name flex-item">
+        <text>数量:</text>
+      </view>
+      <view>
+        <input type='text' name='num' ></input>
+      </view>
+    </view>
+    <view class="my-item clearfloat ">
+      <view class="myitem-name flex-item">
+        <text>单位:</text>
+      </view>
+      <view style="border-style: none;">
+        <input type="text" name="dw" wx:if="{{company === '种植植物'}}" value="颗" />
+        <input type="text" name="dw" wx:elif="{{company === '骑电动车'}}" value="KM" />
+        <input type="text" name="dw" wx:elif="{{company === '徒步出行'}}" value="KM" />
+        <input type="text" name="dw" wx:elif="{{company === '新能源车'}}" value="KM" />
+        <input type="text" name="dw" wx:elif="{{company === '垃圾回收'}}" value="KG" />
+        <input name="dw" placeholder="请手动输入单位" type="text" wx:else />
+      </view>
+    </view>
+    <view  class="my-item">
+      <button type='primary' form-type='submit'>确定</button>
+    </view>
+    </form> 
+  </view>
+</view>
